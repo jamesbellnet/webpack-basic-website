@@ -1,0 +1,40 @@
+{
+  "name": "webpack-basic-website",
+  "version": "1.0.0",
+  "description": "A template for building websites with webpack & babel.",
+  "scripts": {
+    "build-dev": "cross-env NODE_ENV=development webpack --config webpack.config.js",
+    "serve": "cross-env NODE_ENV=development webpack-dev-server --hot"
+  },
+  "author": "James Bell <hello@jamesbell.net>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jamesbellnet/webpack-basic-website.git"
+  },
+  "browserslist": [
+    "> 1%",
+    "not ie <= 8"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "autoprefixer": "^9.7.1",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^6.0.3",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "postcss-loader": "^3.0.0",
+    "sass": "^1.23.3",
+    "sass-loader": "^8.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
