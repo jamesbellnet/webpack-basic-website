@@ -8,11 +8,11 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
     mode: process.env.NODE_ENV,
     entry: {
-        main: ['./src/main.js', './src/sass/styles.scss']
+        main: ['./src/js/index.js', './src/sass/styles.scss']
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'app.js'
+        filename: 'js/app.js'
     },
     devServer: {
         port: 3000
@@ -75,11 +75,11 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './index.html',
+            template: './src/index.html',
             title: process.env.APP_NAME
         }),
         new MiniCssExtractPlugin({
-            filename: 'app.css'
+            filename: 'css/app.css'
         }),
         new CleanWebpackPlugin()
     ]
