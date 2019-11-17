@@ -13,6 +13,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
+        publicPath: '/',
         filename: process.env.NODE_ENV === 'production' ? 'app.[hash:8].js' : 'app.js'
     },
     devServer: {
@@ -56,7 +57,8 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            outputPath: 'assets/images'
+                            outputPath: 'assets/images',
+                            publicPath: 'assets/images'
                         }
                     }
                 ]
@@ -67,7 +69,8 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            outputPath: 'assets/fonts'
+                            outputPath: 'assets/fonts',
+                            publicPath: 'assets/fonts'
                         }
                     }
                 ]
