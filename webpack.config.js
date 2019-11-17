@@ -52,6 +52,20 @@ module.exports = {
                 ]
             },
             {
+                test: /\.html$/,
+                use: [
+                    {
+                        loader: 'ejs-loader'
+                    },
+                    {
+                        loader: 'extract-loader'
+                    },
+                    {
+                        loader: 'html-loader'
+                    }
+                ]
+            },
+            {
                 test: /\.(png|jpe?g|gif|svg)$/,
                 use: [
                     {
