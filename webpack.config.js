@@ -13,7 +13,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: process.env.NODE_ENV === 'production' ? 'js/app.[hash:8].js' : 'js/app.js'
+        filename: process.env.NODE_ENV === 'production' ? 'app.[hash:8].js' : 'app.js'
     },
     devServer: {
         port: 3000
@@ -80,7 +80,7 @@ module.exports = {
             title: process.env.APP_NAME
         }),
         new MiniCssExtractPlugin({
-            filename: process.env.NODE_ENV === 'production' ? 'css/app.[hash:8].css' : 'css/app.css'
+            filename: process.env.NODE_ENV === 'production' ? 'app.[hash:8].css' : 'app.css'
         }),
         new CleanWebpackPlugin()
     ],
