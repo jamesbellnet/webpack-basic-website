@@ -1,7 +1,5 @@
-if(process.env.NODE_ENV === 'production') {
-    module.exports = {
-        plugins: [
+module.exports = {
+    plugins: [
         require('postcss-preset-env')
-        ]
-    }
+    ]
 }
