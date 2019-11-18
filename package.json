@@ -14,7 +14,7 @@
     "url": "https://github.com/jamesbellnet/webpack-basic-website.git"
   },
   "browserslist": [
-    "> 1%",
+    "> 0.25%",
     "not ie <= 8"
   ],
   "devDependencies": {
