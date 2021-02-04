@@ -7,7 +7,7 @@
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
     "serve": "cross-env NODE_ENV=development webpack-dev-server --hot"
   },
-  "author": "James Bell <hello@jamesbell.net>",
+  "author": "James Bell <dev@jamesbell.net>",
   "license": "MIT",
   "repository": {
     "type": "git",
